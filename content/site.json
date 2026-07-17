@@ -1,7 +1,7 @@
 {
   "brand_name": "VIRTUS",
   "hero": {
-    "eyebrow": "May đo cao cấp — từ 1998",
+    "eyebrow": "May đo cao cấp — từ 1999",
     "title": "Vóc dáng của bạn.\nĐường kim của chúng tôi.",
     "subtitle": "VIRTUS là xưởng may đo phong cách công sở dành riêng cho người đàn ông coi trọng sự chỉn chu trong từng chi tiết — từ dáng vest, chất vải, đến đường chỉ cuối cùng."
   },
@@ -11,9 +11,18 @@
     "paragraph": "Chúng tôi tin rằng trang phục công sở là ngôn ngữ đầu tiên bạn nói trước khi mở lời. VIRTUS không may hàng loạt — mỗi đơn hàng là một bộ hồ sơ số đo riêng, được lưu lại để lần đặt sau chỉ mất một buổi hẹn.",
     "quote": "Một người đàn ông không cần nhiều bộ vest. Anh ta cần một bộ vừa với chính mình.",
     "stats": [
-      { "number": "26", "label": "năm kinh nghiệm" },
-      { "number": "21", "label": "điểm đo thủ công" },
-      { "number": "4.800+", "label": "khách hàng đã đo" }
+      {
+        "number": "26",
+        "label": "năm kinh nghiệm"
+      },
+      {
+        "number": "21",
+        "label": "điểm đo thủ công"
+      },
+      {
+        "number": "4.800+",
+        "label": "khách hàng đã đo"
+      }
     ]
   },
   "collections": [
