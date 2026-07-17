@@ -18,7 +18,7 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="#top" class="logo">VIRTUS<span class="logo-dot">.</span></a>
+    <a href="#top" class="logo"><span id="brandNameHeader">VIRTUS</span><span class="logo-dot">.</span></a>
     <nav class="main-nav" id="mainNav">
       <a href="#collections">Bộ sưu tập</a>
       <a href="#process">Quy trình</a>
@@ -39,9 +39,9 @@
   <section class="hero">
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">May đo cao cấp — từ 1998</p>
-        <h1 class="hero-title">Vóc dáng của bạn.<br>Đường kim của chúng tôi.</h1>
-        <p class="hero-sub">VIRTUS là xưởng may đo phong cách công sở dành riêng cho người đàn ông coi trọng sự chỉn chu trong từng chi tiết — từ dáng vest, chất vải, đến đường chỉ cuối cùng.</p>
+        <p class="eyebrow" id="heroEyebrow">May đo cao cấp — từ 1998</p>
+        <h1 class="hero-title" id="heroTitle">Vóc dáng của bạn.<br>Đường kim của chúng tôi.</h1>
+        <p class="hero-sub" id="heroSub">VIRTUS là xưởng may đo phong cách công sở dành riêng cho người đàn ông coi trọng sự chỉn chu trong từng chi tiết — từ dáng vest, chất vải, đến đường chỉ cuối cùng.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn--brass">Đặt lịch đo may</a>
           <a href="#collections" class="btn btn--ghost">Xem bộ sưu tập</a>
@@ -82,13 +82,13 @@
     <div class="wrap philosophy-inner">
       <div class="philosophy-head">
         <p class="eyebrow eyebrow--dark">Triết lý</p>
-        <h2 class="section-title">Sự chuẩn mực<br>không phải ngẫu nhiên.</h2>
+        <h2 class="section-title" id="philosophyHeading">Sự chuẩn mực<br>không phải ngẫu nhiên.</h2>
       </div>
       <div class="philosophy-body">
-        <p class="lead">Một bộ vest vừa vặn không đến từ may mắn — nó đến từ 21 điểm đo, hàng trăm lựa chọn vải, và một người thợ hiểu rằng dáng vai của bạn không giống bất kỳ ai khác.</p>
-        <p>Chúng tôi tin rằng trang phục công sở là ngôn ngữ đầu tiên bạn nói trước khi mở lời. VIRTUS không may hàng loạt — mỗi đơn hàng là một bộ hồ sơ số đo riêng, được lưu lại để lần đặt sau chỉ mất một buổi hẹn.</p>
-        <blockquote class="pull-quote">“Một người đàn ông không cần nhiều bộ vest. Anh ta cần một bộ vừa với chính mình.”</blockquote>
-        <div class="stat-row">
+        <p class="lead" id="philosophyLead">Một bộ vest vừa vặn không đến từ may mắn — nó đến từ 21 điểm đo, hàng trăm lựa chọn vải, và một người thợ hiểu rằng dáng vai của bạn không giống bất kỳ ai khác.</p>
+        <p id="philosophyParagraph">Chúng tôi tin rằng trang phục công sở là ngôn ngữ đầu tiên bạn nói trước khi mở lời. VIRTUS không may hàng loạt — mỗi đơn hàng là một bộ hồ sơ số đo riêng, được lưu lại để lần đặt sau chỉ mất một buổi hẹn.</p>
+        <blockquote class="pull-quote" id="philosophyQuote">“Một người đàn ông không cần nhiều bộ vest. Anh ta cần một bộ vừa với chính mình.”</blockquote>
+        <div class="stat-row" id="statRow">
           <div class="stat"><span class="stat-num">26</span><span class="stat-label">năm kinh nghiệm</span></div>
           <div class="stat"><span class="stat-num">21</span><span class="stat-label">điểm đo thủ công</span></div>
           <div class="stat"><span class="stat-num">4.800+</span><span class="stat-label">khách hàng đã đo</span></div>
@@ -104,8 +104,9 @@
         <p class="eyebrow">Bộ sưu tập</p>
         <h2 class="section-title section-title--light">Bốn nền tảng của<br>phong cách công sở</h2>
       </div>
-      <div class="card-grid">
-
+      <div class="card-grid" id="collectionsGrid">
+        <!-- Nội dung 4 thẻ bên dưới là mặc định; sẽ được thay bằng dữ liệu
+             từ content/site.json (chỉnh qua trang quản trị /admin) nếu tải được. -->
         <article class="p-card">
           <div class="p-card__art" aria-hidden="true">
             <svg viewBox="0 0 120 120"><path d="M60 10 L40 24 L24 60 L30 108 L90 108 L96 60 L80 24 Z" class="pc-line"/><path d="M60 10 L60 60" class="pc-line pc-line--soft"/><circle cx="60" cy="78" r="2.5" class="pc-dot"/><circle cx="60" cy="92" r="2.5" class="pc-dot"/></svg>
@@ -141,7 +142,6 @@
           <p>Da bò Ý nguyên tấm, đế khâu Goodyear.</p>
           <div class="p-card__meta"><span>Từ 2.200.000₫</span><a href="#contact">Khám phá →</a></div>
         </article>
-
       </div>
     </div>
   </section>
@@ -196,7 +196,7 @@
         <p class="eyebrow">Khách hàng nói gì</p>
         <h2 class="section-title section-title--light">Được tin dùng bởi<br>những người bận rộn</h2>
       </div>
-      <div class="quote-grid">
+      <div class="quote-grid" id="testimonialsGrid">
         <figure class="quote-card">
           <blockquote>“Lần đầu tiên tôi mặc một chiếc vest mà không cần chỉnh tay áo suốt buổi họp.”</blockquote>
           <figcaption>Anh Minh Quân<span>Giám đốc Tài chính</span></figcaption>
@@ -221,10 +221,10 @@
         <h2 class="section-title">Đặt lịch đo may<br>riêng cho bạn.</h2>
         <p class="lead">Để lại thông tin, đội ngũ tư vấn của VIRTUS sẽ liên hệ trong vòng 24 giờ để xếp lịch hẹn tại xưởng hoặc tại văn phòng của bạn.</p>
         <ul class="contact-info">
-          <li><strong>Xưởng may:</strong> 12 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh</li>
-          <li><strong>Điện thoại:</strong> 028 1234 5678</li>
-          <li><strong>Email:</strong> dattlich@virtus.vn</li>
-          <li><strong>Giờ mở cửa:</strong> 9:00 – 19:00, Thứ Hai – Thứ Bảy</li>
+          <li><strong>Xưởng may:</strong> <span id="contactAddress">12 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh</span></li>
+          <li><strong>Điện thoại:</strong> <span id="contactPhone">028 1234 5678</span></li>
+          <li><strong>Email:</strong> <span id="contactEmail">dattlich@virtus.vn</span></li>
+          <li><strong>Giờ mở cửa:</strong> <span id="contactHours">9:00 – 19:00, Thứ Hai – Thứ Bảy</span></li>
         </ul>
       </div>
       <!--
@@ -277,7 +277,7 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <a href="#top" class="logo logo--footer">VIRTUS<span class="logo-dot">.</span></a>
+      <a href="#top" class="logo logo--footer"><span id="brandNameFooter">VIRTUS</span><span class="logo-dot">.</span></a>
       <p>May đo cao cấp cho phái mạnh — chỉn chu từ số đo đến đường chỉ.</p>
     </div>
     <div class="footer-col">
@@ -289,9 +289,9 @@
     </div>
     <div class="footer-col">
       <h4>Liên hệ</h4>
-      <a href="tel:0281234568">028 1234 5678</a>
-      <a href="mailto:dattlich@virtus.vn">dattlich@virtus.vn</a>
-      <span>12 Lê Lợi, Q.1, TP.HCM</span>
+      <a href="tel:0281234568" id="footerPhone">028 1234 5678</a>
+      <a href="mailto:dattlich@virtus.vn" id="footerEmail">dattlich@virtus.vn</a>
+      <span id="footerAddress">12 Lê Lợi, Q.1, TP.HCM</span>
     </div>
     <div class="footer-col">
       <h4>Theo dõi</h4>
@@ -305,6 +305,20 @@
   </div>
 </footer>
 
+<!-- Netlify Identity: chỉ dùng để xử lý link mời/xác nhận tài khoản gửi qua email
+     (trỏ về trang chủ). Việc đăng nhập quản trị thực sự diễn ra ở /admin. -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 <script src="script.js"></script>
 </body>
 </html>

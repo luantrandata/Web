@@ -1,0 +1,68 @@
+{
+  "brand_name": "VIRTUS",
+  "hero": {
+    "eyebrow": "May đo cao cấp — từ 1998",
+    "title": "Vóc dáng của bạn.\nĐường kim của chúng tôi.",
+    "subtitle": "VIRTUS là xưởng may đo phong cách công sở dành riêng cho người đàn ông coi trọng sự chỉn chu trong từng chi tiết — từ dáng vest, chất vải, đến đường chỉ cuối cùng."
+  },
+  "philosophy": {
+    "heading": "Sự chuẩn mực\nkhông phải ngẫu nhiên.",
+    "lead": "Một bộ vest vừa vặn không đến từ may mắn — nó đến từ 21 điểm đo, hàng trăm lựa chọn vải, và một người thợ hiểu rằng dáng vai của bạn không giống bất kỳ ai khác.",
+    "paragraph": "Chúng tôi tin rằng trang phục công sở là ngôn ngữ đầu tiên bạn nói trước khi mở lời. VIRTUS không may hàng loạt — mỗi đơn hàng là một bộ hồ sơ số đo riêng, được lưu lại để lần đặt sau chỉ mất một buổi hẹn.",
+    "quote": "Một người đàn ông không cần nhiều bộ vest. Anh ta cần một bộ vừa với chính mình.",
+    "stats": [
+      { "number": "26", "label": "năm kinh nghiệm" },
+      { "number": "21", "label": "điểm đo thủ công" },
+      { "number": "4.800+", "label": "khách hàng đã đo" }
+    ]
+  },
+  "collections": [
+    {
+      "name": "Vest may đo",
+      "description": "Wool Ý & len pha, dáng Ý hoặc Anh theo lựa chọn.",
+      "price": "Từ 6.900.000₫",
+      "image": ""
+    },
+    {
+      "name": "Sơ mi công sở",
+      "description": "Cotton Ai Cập 2 lớp, form Slim hoặc Regular.",
+      "price": "Từ 990.000₫",
+      "image": ""
+    },
+    {
+      "name": "Cà vạt & phụ kiện",
+      "description": "Lụa dệt tay, khuy măng sét, kẹp cà vạt bạc.",
+      "price": "Từ 450.000₫",
+      "image": ""
+    },
+    {
+      "name": "Giày da thật",
+      "description": "Da bò Ý nguyên tấm, đế khâu Goodyear.",
+      "price": "Từ 2.200.000₫",
+      "image": ""
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Lần đầu tiên tôi mặc một chiếc vest mà không cần chỉnh tay áo suốt buổi họp.",
+      "name": "Anh Minh Quân",
+      "title": "Giám đốc Tài chính"
+    },
+    {
+      "quote": "Hồ sơ số đo được lưu lại giúp tôi đặt thêm sơ mi qua điện thoại, không cần ra xưởng.",
+      "name": "Anh Đức Anh",
+      "title": "Kiến trúc sư"
+    },
+    {
+      "quote": "Chất vải và đường may hơn hẳn những gì tôi từng đặt ở nước ngoài.",
+      "name": "Anh Thành Long",
+      "title": "Luật sư"
+    }
+  ],
+  "contact": {
+    "address": "12 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh",
+    "phone": "028 1234 5678",
+    "email": "dattlich@virtus.vn",
+    "hours": "9:00 – 19:00, Thứ Hai – Thứ Bảy"
+  }
+}

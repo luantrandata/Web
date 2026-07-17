@@ -318,7 +318,8 @@ button{ font-family: inherit; }
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 .p-card:hover{ transform: translateY(-6px); border-color: var(--brass); }
-.p-card__art{ width: 72px; height: 72px; margin-bottom: 20px; }
+.p-card__art{ width: 72px; height: 72px; margin-bottom: 20px; border-radius: var(--radius); overflow: hidden; }
+.p-card__art img{ width: 100%; height: 100%; object-fit: cover; display: block; }
 .pc-line{ fill:none; stroke: var(--brass-light); stroke-width: 2.2; }
 .pc-line--soft{ stroke: var(--muted-on-ink); stroke-dasharray: 2 3; }
 .pc-dot{ fill: var(--brass-light); }
