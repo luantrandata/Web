@@ -1,11 +1,88 @@
-<!doctype html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quản trị nội dung — VIRTUS</title>
-</head>
-<body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-</body>
-</html>
+backend:
+  name: git-gateway
+  repo: luantrandata/Web
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/3a44e85d-f320-42e1-8100-ef10662546c9
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    update: 'Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    delete: 'Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    uploadMedia: 'Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    deleteMedia: 'Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    openAuthoring: 'Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge'
+
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://tourmaline-banoffee-30b3ac.netlify.app
+
+# Nơi lưu ảnh khi admin upload qua trang quản trị,
+# và đường dẫn public để website hiển thị ảnh đó.
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+locale: "vi"
+
+collections:
+  - name: "site"
+    label: "Nội dung trang web"
+    files:
+      - file: "content/site.json"
+        label: "Toàn bộ nội dung"
+        name: "site"
+        format: "json"
+        fields:
+          - label: "Trang chủ (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Dòng chữ nhỏ phía trên tiêu đề", name: "eyebrow", widget: "string" }
+              - { label: "Tiêu đề chính (xuống dòng = Enter)", name: "title", widget: "text" }
+              - { label: "Đoạn mô tả ngắn", name: "subtitle", widget: "text" }
+
+          - label: "Triết lý thương hiệu"
+            name: "philosophy"
+            widget: "object"
+            fields:
+              - { label: "Tiêu đề (xuống dòng = Enter)", name: "heading", widget: "text" }
+              - { label: "Đoạn mở đầu (in đậm)", name: "lead", widget: "text" }
+              - { label: "Đoạn văn tiếp theo", name: "paragraph", widget: "text" }
+              - { label: "Câu trích dẫn nổi bật", name: "quote", widget: "text" }
+              - label: "Số liệu (3 ô thống kê)"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Con số", name: "number", widget: "string" }
+                  - { label: "Nhãn giải thích", name: "label", widget: "string" }
+
+          - label: "Bộ sưu tập sản phẩm"
+            name: "collections"
+            widget: "list"
+            summary: "{{name}} — {{price}}"
+            fields:
+              - { label: "Tên sản phẩm", name: "name", widget: "string" }
+              - { label: "Mô tả ngắn", name: "description", widget: "string" }
+              - { label: "Giá (VD: Từ 6.900.000₫)", name: "price", widget: "string" }
+              - label: "Ảnh sản phẩm (bỏ trống để dùng icon minh hoạ mặc định)"
+                name: "image"
+                widget: "image"
+                required: false
+
+          - label: "Đánh giá khách hàng"
+            name: "testimonials"
+            widget: "list"
+            summary: "{{name}} — {{title}}"
+            fields:
+              - { label: "Câu trích dẫn", name: "quote", widget: "text" }
+              - { label: "Tên khách hàng", name: "name", widget: "string" }
+              - { label: "Chức danh / công ty", name: "title", widget: "string" }
+
+          - label: "Thông tin liên hệ"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Địa chỉ xưởng may", name: "address", widget: "string" }
+              - { label: "Số điện thoại", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Giờ mở cửa", name: "hours", widget: "string" }
